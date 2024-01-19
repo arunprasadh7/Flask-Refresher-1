@@ -1,0 +1,16 @@
+{% extends 'form_home.html'%} {% block content %}
+<h1 class="text-center">Welcome to GuruMart Login Page</h1>
+
+<form action="http://127.0.0.1:5000/login" method="post">
+  <div class="mb-3">
+    <label for="userName" class="form-label">UserName</label>
+    <input type="text" name="name" id="userName" />
+  </div>
+  <div class="mb-3">
+    <label for="userPassword" class="form-label">Password</label>
+    <input type="password" name="password" id="userPassword" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
